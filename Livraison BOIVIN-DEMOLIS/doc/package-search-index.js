@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"proxybanque.domainecompte"},{"l":"proxybanque.domaineentity"},{"l":"proxybanque.presentation"},{"l":"proxybanque.service"},{"l":"proxybanque.tests"}]
