@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+
+<title>Bienvenue</title>
+</head>
+
+<body>
+
+	<!-- Page JSF de base -->
+	<f:view>
+		<h:outputText value="Formulaire d'enregistrement. "></h:outputText>
+
+		<h:form>
+			<h:selectManyListbox>
+				<f:selectItem itemValue="1" itemLabel="Item 1" />
+				<f:selectItem itemValue="2" itemLabel="Item 2" />
+				<f:selectItem itemValue="3" itemLabel="Item 3" />
+				<f:selectItem itemValue="4" itemLabel="Item 4" />
+				<f:selectItem itemValue="5" itemLabel="Item 5" />
+				<f:selectItem itemValue="6" itemLabel="Item 6" />
+				<f:selectItem itemValue="7" itemLabel="Item 7" />
+				<f:selectItem itemValue="8" itemLabel="Item 8" />
+			</h:selectManyListbox>
+		</h:form>
+		
+		<h:form id="formId">
+			<h:commandButton value="testValue" ></h:commandButton>
+			<h:graphicImage id="imageTest" onclick="changeImage()" value="/images/Desert.jpg"></h:graphicImage>
+		</h:form>
+		
+		<h:form>
+			<h:selectManyCheckbox>
+				<f:selectItem itemValue="1" itemLabel="Item 1" />
+				<f:selectItem itemValue="2" itemLabel="Item 2" />
+				<f:selectItem itemValue="3" itemLabel="Item 3" />
+				<f:selectItem itemValue="4" itemLabel="Item 4" />
+				<f:selectItem itemValue="5" itemLabel="Item 5" />
+				<f:selectItem itemValue="6" itemLabel="Item 6" />
+				<f:selectItem itemValue="7" itemLabel="Item 7" />
+				<f:selectItem itemValue="8" itemLabel="Item 8" />
+			</h:selectManyCheckbox>
+		</h:form>
+		
+	</f:view>
+
+<script>
+	function changeImage(){
+		if (document.getElementById('formId:imageTest').getAttribute("src") === "/premierprojetjsf/images/Jellyfish.jpg"){
+			document.getElementById('formId:imageTest').setAttribute("src","/premierprojetjsf/images/Desert.jpg");
+		}else{
+			document.getElementById('formId:imageTest').setAttribute("src","/premierprojetjsf/images/Jellyfish.jpg");
+		}
+	}
+</script>
+
+</body>
+
+
+</html>
+
+
